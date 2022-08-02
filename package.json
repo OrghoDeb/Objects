@@ -1,0 +1,22 @@
+{
+  "name": "objects",
+  "version": "1.0.0",
+  "description": "This is for object Tasks only",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "objects"
+  },
+  "keywords": [
+    "start"
+  ],
+  "author": "Bhaskar Deb",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
