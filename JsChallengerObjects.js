@@ -30,6 +30,12 @@ console.log(objectChecker({ a: 1, b: undefined, c: 3 }, "b"));
 
 console.log("\nTask 5 = Creating Javascript objects one with one argument");
 function objCreator(f) {
-  return Object.parse(f);
+  return Object.create(f);
 }
 console.log(objCreator("a"));
+
+console.log("\nTask 6 = Sum object values");
+function valueSummation(...x) {
+  return Object.values(...x).sum();
+}
+console.log(valueSummation({ a: 1, b: 2, c: 3 }));
