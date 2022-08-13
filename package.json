@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon JsChallengerObjects.js",
-    "break": "nodemon TakeABreak.js"
+    "break": "nodemon TakeABreak.js",
+    "habijabi": "nodemon habijabi.js"
   },
   "repository": {
     "type": "git",
