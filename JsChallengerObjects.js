@@ -112,3 +112,19 @@ function extractInfo(obj) {
 console.log(
   extractInfo({ fn: "Lisa", ln: "Müller", age: 17, size: 175, weight: 67 })
 );
+
+console.log("\nTask 16 = Add property to each object in array");
+function propertyAdder(a, b) {
+  return a.map((e) => {
+    return { ...e, continent: b };
+  });
+}
+console.log(
+  propertyAdder(
+    [
+      { city: "Tokyo", country: "Japan" },
+      { city: "Bangkok", country: "Thailand" },
+    ],
+    "Asia"
+  )
+);
