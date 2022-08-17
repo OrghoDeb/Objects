@@ -22,20 +22,20 @@ const test = [
 // Return me as string all countries name will be capital letter
 // Return me new Obj only africa
 
-// function organizedContinent(a) {
-//   return a;
-// }
-// let result = "";
+function organizedContinent(a) {
+  return a;
+}
+let result = "";
 
-// test.forEach((e) => {
-//   return (result +=
-//     e.continent
-//       .charAt(0)
-//       .split("")
-//       .sort((A, B) => A - B) + "\n");
-// });
+test.forEach((e) => {
+  return (result +=
+    e.continent
+      .charAt(0)
+      .split("")
+      .sort((A, B) => A - B) + "\n");
+});
 
-// console.log(result);
+console.log(result);
 
 // function europeContinent(a) {
 //   return a.filter((e) => {
@@ -79,7 +79,10 @@ let africaCountryResult = "";
 
 test.forEach((e) => {
   if (e.continent === "Africa") {
-    return [(africaCountryResult += {continent} =  e.continent + {name12} = e.name)];
+    return [
+      (africaCountryResult += { continent } = e.continent) +
+        ({ name12 } = e.name),
+    ];
   }
 });
 console.log([africaCountryResult]);
