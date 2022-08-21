@@ -128,3 +128,9 @@ console.log(
     "Asia"
   )
 );
+
+console.log("\nTask 17 = Convert array to object with counter");
+function objCounter(a) {
+  return;
+}
+console.log(objCounter([1, 2, 2, 3]));

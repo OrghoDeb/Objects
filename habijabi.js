@@ -22,67 +22,24 @@ const test = [
 // Return me as string all countries name will be capital letter
 // Return me new Obj only africa
 
-function organizedContinent(a) {
-  return a;
-}
-let result = "";
-
+let europeCountries = "";
 test.forEach((e) => {
-  return (result +=
-    e.continent
-      .charAt(0)
-      .split("")
-      .sort((A, B) => A - B) + "\n");
-});
-
-console.log(result);
-
-// function europeContinent(a) {
-//   return a.filter((e) => {
-//     return e.continent;
-//   });
-// }
-// console.log(
-//   europeContinent([
-//     {
-//       name: "Japan",
-//       continent: "Asia",
-//     },
-//     {
-//       name: "Finland",
-//       continent: "Europe",
-//     },
-//     {
-//       name: "Sudan",
-//       continent: "Africa",
-//     },
-//     {
-//       name: "France",
-//       continent: "Europe",
-//     },
-//   ])
-// );
-
-// function countryNameCapital(a) {
-//   return a;
-// }
-// let countryName = "";
-// test.forEach((e) => {
-//   return (countryName += e.name.toUpperCase() + "\n");
-// });
-// console.log(countryName);
-
-function africaCountry(a) {
-  return [a];
-}
-let africaCountryResult = "";
-
-test.forEach((e) => {
-  if (e.continent === "Africa") {
-    return [
-      (africaCountryResult += { continent } = e.continent) +
-        ({ name12 } = e.name),
-    ];
+  if (e.continent === "Europe") {
+    return (europeCountries += e.name + "\n");
   }
 });
-console.log([africaCountryResult]);
+console.log(europeCountries);
+
+let capitalLetter = "";
+test.forEach((e) => {
+  return (capitalLetter += e.name.toLocaleUpperCase() + "\n");
+});
+console.log(capitalLetter);
+
+let africaOnly = "";
+test.forEach((e) => {
+  if (e.continent === "Africa") {
+    return (africaOnly += e.name);
+  }
+});
+console.log({ name: [africaOnly] });
